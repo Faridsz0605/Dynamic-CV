@@ -2,23 +2,15 @@
 
 Production portfolio for **Farid Sayago Villamizar**.
 
-This repo is a full Farid rebrand of the previous Dynamic-CV codebase. It combines Farid's 3D portfolio design language with the advanced AI/LLMOps modules from Dynamic-CV.
+This repo is a full Farid rebrand of the previous Dynamic-CV codebase. It combines my last portfolio design lenguage and branding using `wiener hund studios` as my image with the advanced AI/LLMOps modules from Dynamic-CV. Shot out tu @santifer its web and repo inspired me to add my own touch of design.
 
 ## Product decisions
 
-- Public frontend deploys on **Hostinger**.
+- Public frontend deploys on **Hostinger** (my hosting service).
 - API/LLMOps backend deploys on **Vercel** at `https://api.sayagos.tech`.
 - Public contact form uses **EmailJS only**.
 - Text chat, voice mode, RAG, Langfuse tracing, Supabase, ops dashboard, and eval infrastructure remain.
 - Supabase/Langfuse must be fresh Farid-only projects.
-- Santiago/Santifer public content must not ship.
-
-## Source of truth
-
-- Project context: `CONTEXT.md`
-- Agent rules: `AGENTS.md`
-- Farid profile docs: `/home/faris/Documents/obsidian/portfolio`
-- Design/content reference: `/home/faris/Desktop/personal/3d-portfolio`
 
 ## Commands
 
