@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import type { UseOpsApiOptions, UseOpsApiResult } from '../types'
+import { apiUrl } from '../../lib/api-base'
 
 const OPS_TOKEN_KEY = 'ops_token'
 
@@ -65,7 +66,7 @@ export function useOpsApi<T>(options: UseOpsApiOptions): UseOpsApiResult<T> {
     setError(null)
 
     try {
-      const url = new URL(`/api/ops/${endpoint}`, window.location.origin)
+      const url = new URL(apiUrl(`/api/ops/${endpoint}`), window.location.origin)
       if (stableParams) {
         Object.entries(stableParams).forEach(([k, v]) => url.searchParams.set(k, v))
       }

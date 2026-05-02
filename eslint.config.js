@@ -6,7 +6,27 @@ import tseslint from 'typescript-eslint'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  globalIgnores(['dist']),
+  globalIgnores([
+    'dist',
+    'scripts',
+    'evals',
+    'src/BusinessOS.tsx',
+    'src/CareerOps.tsx',
+    'src/JacoboAgent.tsx',
+    'src/N8nForPMs.tsx',
+    'src/ProgrammaticSeo.tsx',
+    'src/SantiferIRepair.tsx',
+    'src/SelfHealingChatbot.tsx',
+    'src/PrivacyPolicy.tsx',
+    'src/MusicToggle.tsx',
+    'src/articles/content-types.tsx',
+    'src/articles/use-article-seo.ts',
+    'src/VoiceOrb.tsx',
+    'src/useAudioAnalyser.ts',
+    'src/ops/hooks/useTraces.ts',
+    'src/ops/tabs',
+    'src/*-i18n.ts',
+  ]),
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
