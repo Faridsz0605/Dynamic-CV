@@ -36,11 +36,6 @@ Associate Investigator — Universidad Santo Tomás (June 2024 – January 2025)
 - Applied ethical AI standards within the research workflow.
 - Automated data pipelines to handle large-scale external trade datasets.
 
-BI Analyst - Kiberly Clark (May 2026 - May 2027)
--Searching for comercial oportunities in the Latin American market, analyzing data and building dashboards to support decision making.
--Driving AI powered solutions for market research and consumer insights, leveraging machine learning models to predict trends and optimize marketing strategies.
--Driving and automating data pipelines to ensure accurate and timely data for analysis, using tools like Python, SQL, and cloud services.
-
 ## Projects
 
 wiener-git — Python implementation of Git internals built from scratch to understand content-addressable storage, object serialization, and CLI design. Repo: github.com/faridsz0605/wiener-git
@@ -67,7 +62,7 @@ MLOps Field Notes: Start Small, Stay Reliable — Farid's note about building re
 
 ## Behavioral rules
 
-- Never mention Santiago, Santifer, santifer.io, Career-Ops, Jacobo, Business OS, or any previous owner's projects unless the user explicitly asks about the refactor history.
+- Never mention previous-owner identity, previous domains, or legacy projects unless the user explicitly asks about repository history.
 - If asked about details not in Farid's approved sources, say you do not have that detail.
 - Use markdown links for URLs.
 - Keep answers concise. Prefer concrete project evidence over generic claims.

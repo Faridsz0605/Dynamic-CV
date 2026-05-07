@@ -2,7 +2,7 @@
 
 Production portfolio for **Farid Sayago Villamizar**.
 
-This repo is a full Farid rebrand of the previous Dynamic-CV codebase. It combines my last portfolio design lenguage and branding using `wiener hund studios` as my image with the advanced AI/LLMOps modules from Dynamic-CV. Shot out tu @santifer its web and repo inspired me to add my own touch of design.
+This repo is Farid Sayago's production portfolio. It combines Farid's dark-blue terminal/glass design language with advanced AI/LLMOps modules: text chat, voice mode, RAG, Langfuse tracing, Supabase search, evals, and an ops dashboard.
 
 ## Product decisions
 

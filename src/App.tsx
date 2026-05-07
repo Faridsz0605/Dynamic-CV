@@ -178,7 +178,11 @@ function Work() {
               <img
                 src={project.image}
                 alt={`${project.title} screenshot`}
+                width={1200}
+                height={750}
                 loading={project.featured ? "eager" : "lazy"}
+                fetchPriority={project.featured ? "high" : "auto"}
+                decoding="async"
               />
             </a>
             <div className="farid-project-content">
@@ -297,7 +301,7 @@ function FieldNotes() {
     <section id="field-notes" className="farid-section">
       <SectionKicker index="04">Field Notes</SectionKicker>
       <div className="farid-section-heading">
-        <h2 className="farid-display">Workflows that writes itself.</h2>
+        <h2 className="farid-display">Workflows that write themselves.</h2>
       </div>
       <a href="/blog/mlops-field-notes" className="farid-note-card">
         <span>{faridProfile.fieldNote.date}</span>

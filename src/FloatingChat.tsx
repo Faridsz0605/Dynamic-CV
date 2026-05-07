@@ -626,7 +626,7 @@ export default function FloatingChat({ lang }: FloatingChatProps) {
             ref={chatContainerRef}
             role="dialog"
             aria-modal="true"
-            aria-label={lang === 'en' ? 'Chat with Santi' : 'Chat con Santi'}
+            aria-label={lang === 'en' ? 'Chat with Farid AI' : 'Chat con Farid AI'}
             initial={isMobile ? { opacity: 0 } : { opacity: 0, y: 20, scale: 0.95 }}
             animate={isMobile ? { opacity: 1 } : { opacity: 1, y: 0, scale: 1 }}
             exit={isMobile ? { opacity: 0 } : { opacity: 0, y: 20, scale: 0.95 }}

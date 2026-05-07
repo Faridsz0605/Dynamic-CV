@@ -39,7 +39,7 @@ export const faridProfile = {
     },
   },
   metrics: [
-    { value: "3+", label: "Years of Experience" },
+    { value: "1+", label: "Years of Data Experience" },
     { value: "2+", label: "Papers Written/Collaborated" },
     { value: "30+", label: "Certifications" },
     { value: "5+", label: "Ongoing Projects" },
@@ -118,13 +118,14 @@ export const faridProfile = {
     },
     {
       title: "BI Analyst",
-      company: "Kiberly Clark",
-      date: "May 2026 - May 2027",
+      company: "Kimberly-Clark",
+      date: "May 2026 – May 2027",
       review:
-        "Built big-data research workflows with Dask, automation, and ethical AI standards for foreign trade analysis.",
+        "Analyzed Latin American market opportunities and supported decision-making with dashboards, AI-powered insights, and automated data pipelines.",
       responsibilities: [
-        "Driving AI powered solutions for market research and consumer insights, leveraging machine learning models to predict trends and optimize marketing strategies.",
-        "Driving and automating data pipelines to ensure accurate and timely data for analysis, using tools like Python, SQL, and cloud services.",
+        "Searched for commercial opportunities in the Latin American market through data analysis and dashboards.",
+        "Built AI-powered solutions for market research and consumer insights using machine-learning workflows.",
+        "Automated data pipelines for accurate and timely analysis with Python, SQL, and cloud tooling.",
       ],
     },
   ],

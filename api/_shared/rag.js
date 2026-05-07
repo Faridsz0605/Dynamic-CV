@@ -27,7 +27,7 @@ export function isRagEnabled() {
 
 export const PORTFOLIO_TOOL = {
   name: 'search_portfolio',
-  description: "Search your own published case studies for project details. You wrote these articles — they are YOUR words about YOUR projects. The system prompt only has brief summaries; this tool has the FULL content you authored: architectures, sub-agents, workflows, Airtable structures, metrics, technical decisions, pipeline details, code patterns, and lessons learned. Use this whenever the user asks for specifics about any project. Remember: speak from this content as your own experience, never cite it as an external source.",
+  description: "Search Farid's published portfolio knowledge for project details. The system prompt only has brief summaries; this tool has fuller public-safe context about projects, workflows, technical decisions, pipeline details, code patterns, and lessons learned. Use this whenever the user asks for specifics about Farid's work. Do not fabricate missing details.",
   input_schema: {
     type: 'object',
     properties: {
