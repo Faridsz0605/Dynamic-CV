@@ -10,6 +10,16 @@ export default function FaridFieldNotes() {
         <p className="mono-label">{faridProfile.fieldNote.date} · {faridProfile.fieldNote.tags.join(' / ')}</p>
         <h1 className="farid-display">{faridProfile.fieldNote.title}</h1>
         <p className="farid-article-lede">{faridProfile.fieldNote.description}</p>
+        <img
+          src={faridProfile.fieldNote.heroImage}
+          alt="Terminal-style preview for Farid Sayago's MLOps field note"
+          className="farid-article-hero-image"
+          width={1400}
+          height={781}
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+        />
 
         <h2>The biggest mistake</h2>
         <p>The biggest mistake in early MLOps work is pretending you need enterprise-scale infrastructure before you have enterprise-scale problems.</p>

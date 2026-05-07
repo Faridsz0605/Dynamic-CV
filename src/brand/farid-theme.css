@@ -126,6 +126,17 @@ body {
   outline: none;
 }
 
+.farid-article-hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0 0;
+  border: 1px solid var(--farid-line);
+  border-radius: 1.25rem;
+  background: rgba(9, 13, 21, 0.72);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+}
+
 @supports (min-height: 100svh) {
   .farid-hero {
     min-height: 100svh;

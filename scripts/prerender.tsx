@@ -86,6 +86,20 @@ function replaceJsonLd(html: string, jsonLd: object): string {
   return html.replace('</head>', `    ${script}\n  </head>`)
 }
 
+function injectArticleHreflang(html: string, articleSeo: NonNullable<ReturnType<typeof getArticleSeo>>): string {
+  const { article } = articleSeo
+  const links = [
+    { lang: 'es', slug: article.slugs.es },
+    { lang: 'en', slug: article.slugs.en },
+    { lang: 'x-default', slug: article.xDefaultSlug || article.slugs.en },
+  ]
+    .map(({ lang, slug }) => `<link rel="alternate" hreflang="${lang}" href="${absoluteUrl(`/${slug}`)}" />`)
+    .join('\n    ')
+
+  const withoutExisting = html.replace(/\s*<link rel="alternate" hreflang="[^"]+" href="[^"]+" \/>/g, '')
+  return withoutExisting.replace('</head>', `    ${links}\n  </head>`)
+}
+
 function applySeo(html: string, routePath: string): string {
   const isArticle = routePath.startsWith('/blog/')
   const articleSeo = isArticle ? getArticleSeo(routePath) : null
@@ -117,6 +131,7 @@ function applySeo(html: string, routePath: string): string {
     const meta = articleSeo.article.seoMeta
     result = result.replace('</head>', `    <meta property="article:published_time" content="${meta.datePublished}" />\n    <meta property="article:modified_time" content="${meta.dateModified}" />\n    <meta property="article:author" content="https://www.linkedin.com/in/faridsayago/" />\n    <meta property="article:tag" content="${esc(meta.articleTags)}" />\n  </head>`)
   }
+  if (articleSeo) result = injectArticleHreflang(result, articleSeo)
   return jsonLd ? replaceJsonLd(result, jsonLd) : result
 }
 

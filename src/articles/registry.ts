@@ -20,6 +20,7 @@ export interface ArticleConfig {
   type: 'collab' | 'case-study' | 'bridge'
   ogImage?: string
   heroImage?: string
+  contentStage?: 'seed' | 'complete'
   component: () => Promise<{ default: ComponentType<{ lang: 'es' | 'en' }> | ComponentType }>
   xDefaultSlug?: string
   ragReady?: boolean
@@ -44,6 +45,9 @@ export const articleRegistry: ArticleConfig[] = [
     },
     sectionLabels: { es: {}, en: {} },
     type: 'case-study',
+    ogImage: 'https://sayagos.tech/images/og-preview.png',
+    heroImage: 'https://sayagos.tech/images/project1.webp',
+    contentStage: 'seed',
     ragReady: false,
     component: () => import('../FaridFieldNotes.tsx'),
     seoMeta: {
@@ -52,7 +56,7 @@ export const articleRegistry: ArticleConfig[] = [
       keywords: ['MLOps', 'Python', 'Infrastructure', 'machine learning workflows', 'reproducibility'],
       articleType: 'TechArticle',
       articleTags: 'MLOps,Python,Infrastructure',
-      images: ['https://sayagos.tech/images/og-preview.png'],
+      images: ['https://sayagos.tech/images/project1.webp'],
       about: [{ '@type': 'Thing', name: 'MLOps' }],
     },
   },

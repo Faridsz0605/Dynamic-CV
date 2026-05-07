@@ -210,6 +210,7 @@ export const faridProfile = {
       "A practical first note on building reliable machine-learning workflows without over-engineering the system from day one.",
     date: "2026-05-01",
     tags: ["MLOps", "Python", "Infrastructure"],
+    heroImage: "/images/project1.webp",
   },
 } as const;
 
