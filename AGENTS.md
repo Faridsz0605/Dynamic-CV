@@ -124,6 +124,7 @@ Keeps advanced functionality understandable and testable:
 
 ## Current locked decisions
 
+0. `src/content/farid-profile.ts` is the canonical truth source for Farid's public portfolio facts in this repo. Keep `public/llms.txt`, RAG chunks, eval fact expectations, SEO/person JSON-LD, and presentation copy synchronized from that module. If another approved source conflicts with the file, ask Farid before changing shipped facts.
 1. Full Farid rebrand.
 2. Keep all advanced modules for now.
 3. Use `/3d-portfolio` as the design and selected-project reference.
