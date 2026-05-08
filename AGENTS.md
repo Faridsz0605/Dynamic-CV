@@ -122,6 +122,12 @@ Keeps advanced functionality understandable and testable:
 - If a future agent changes architecture, update this file and the relevant Obsidian note.
 - If a decision rejects an obvious alternative for a durable reason, create an ADR in `docs/adr/`.
 
+## Skills used
+
+- `/humanizer` — every text written for humans to read must get a humanizer pass before it ships.
+- `/create-readme` — use this for README structure, GitHub presentation, shields, screenshots, and project onboarding copy.
+- `/caveman` — use this for terse terminal-output summaries when Farid wants quick checks without prose.
+
 ## Current locked decisions
 
 0. `src/content/farid-profile.ts` is the canonical truth source for Farid's public portfolio facts in this repo. Keep `public/llms.txt`, RAG chunks, eval fact expectations, SEO/person JSON-LD, and presentation copy synchronized from that module. If another approved source conflicts with the file, ask Farid before changing shipped facts.
