@@ -6,6 +6,7 @@
 import { readFileSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { faridProfile } from '../src/content/farid-profile.ts'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = resolve(__dirname, '..')
@@ -15,30 +16,30 @@ interface ProofPoint {
   terms: string[]
 }
 
+const experienceProofPoints: ProofPoint[] = faridProfile.experience.map(job => ({
+  source: `${job.company} experience`,
+  terms: [job.company, job.title, job.date],
+}))
+
+const projectProofPoints: ProofPoint[] = faridProfile.projects.map(project => ({
+  source: `${project.title} project`,
+  terms: [project.title, ...project.stack],
+}))
+
 const PROOF_POINTS: ProofPoint[] = [
   {
     source: 'Farid identity',
-    terms: ['Farid Sayago', 'MLOps', 'Colombia'],
+    terms: [faridProfile.name, faridProfile.fullName, 'MLOps', faridProfile.location],
   },
-  {
-    source: 'Intcomex experience',
-    terms: ['Intcomex', 'Data Analyst', 'OLAP', 'Power BI'],
-  },
-  {
-    source: 'Research experience',
-    terms: ['Universidad Santo Tomás', 'Dask', 'econometric'],
-  },
-  {
-    source: 'Projects',
-    terms: ['wiener-git', 'WHTTP', 'Wiener Tickets'],
-  },
+  ...experienceProofPoints,
+  ...projectProofPoints,
   {
     source: 'Skills',
-    terms: ['Python', 'SQL', 'Docker', 'Kubernetes'],
+    terms: ['Python', 'SQL', 'Docker', 'Kubernetes', 'Power BI'],
   },
   {
     source: 'Contact',
-    terms: ['sayagos.tech', 'github.com/faridsz0605', 'linkedin.com/in/faridsayago'],
+    terms: [faridProfile.domain, faridProfile.socials.github, faridProfile.socials.linkedin],
   },
 ]
 

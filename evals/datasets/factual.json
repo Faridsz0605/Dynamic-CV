@@ -23,6 +23,17 @@
       ]
     },
     {
+      "id": "kimberly-clark-role",
+      "description": "Mentions verified Kimberly-Clark role and dates from farid-profile.",
+      "input": "What did Farid do at Kimberly-Clark?",
+      "lang": "en",
+      "assertions": [
+        { "type": "contains", "value": "Kimberly-Clark" },
+        { "type": "contains_any", "values": ["BI Analyst", "business intelligence", "market opportunities", "Latin American"] },
+        { "type": "contains_any", "values": ["May 2026", "May 2027", "2026", "2027"] }
+      ]
+    },
+    {
       "id": "projects-farid-only",
       "description": "Mentions Farid projects.",
       "input": "What projects has Farid built?",

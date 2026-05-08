@@ -1,0 +1,47 @@
+<svg width="1600" height="520" viewBox="0 0 1600 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1240 120) rotate(135) scale(720 520)">
+      <stop stop-color="#3F7CFF" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#0B1220" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#04060A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card" x1="260" y1="90" x2="1320" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#07101F" stop-opacity="0.82"/>
+    </linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" stroke="#FFFFFF" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="200" y="40" width="1200" height="440" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="34" stdDeviation="42" flood-color="#000000" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="520" fill="#04060A"/>
+  <rect width="1600" height="520" fill="url(#grid)"/>
+  <rect width="1600" height="520" fill="url(#glow)"/>
+  <circle cx="270" cy="420" r="220" fill="#3F7CFF" fill-opacity="0.08"/>
+  <circle cx="1380" cy="80" r="260" fill="#3F7CFF" fill-opacity="0.12"/>
+
+  <g filter="url(#shadow)">
+    <rect x="240" y="78" width="1120" height="360" rx="34" fill="url(#card)" stroke="#2E4774" stroke-opacity="0.9"/>
+    <rect x="240" y="78" width="1120" height="56" rx="34" fill="#070B12" fill-opacity="0.72"/>
+    <path d="M240 134H1360" stroke="#2E4774" stroke-opacity="0.85"/>
+    <circle cx="288" cy="106" r="8" fill="#FF5F57"/>
+    <circle cx="318" cy="106" r="8" fill="#FFBD2E"/>
+    <circle cx="348" cy="106" r="8" fill="#28C840"/>
+    <text x="392" y="112" fill="#8EA2C7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20">sayagos.tech / dynamic-ai-portfolio</text>
+
+    <text x="304" y="218" fill="#EAF2FF" font-family="Space Grotesk, Inter, Arial, sans-serif" font-size="70" font-weight="800" letter-spacing="-3">Farid Sayago</text>
+    <text x="304" y="286" fill="#EAF2FF" font-family="Space Grotesk, Inter, Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="-2">Dynamic AI Portfolio</text>
+    <text x="306" y="338" fill="#A9B8D6" font-family="Inter, Arial, sans-serif" font-size="25">MLOps résumé, recruiter-ready public surface, RAG chat, voice mode, evals, and ops telemetry.</text>
+
+    <g transform="translate(1010 182)">
+      <rect x="0" y="0" width="238" height="170" rx="26" fill="#09111E" stroke="#3F7CFF" stroke-opacity="0.45"/>
+      <path d="M45 116C65 70 96 46 136 43C164 41 188 51 206 72" stroke="#3F7CFF" stroke-width="7" stroke-linecap="round"/>
+      <path d="M45 116C74 107 99 112 119 132C140 102 167 85 204 82" stroke="#8FB3FF" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="64" cy="62" r="14" fill="#3F7CFF"/>
+      <circle cx="178" cy="122" r="14" fill="#8FB3FF"/>
+      <text x="50" y="156" fill="#8EA2C7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18">RAG + Evals</text>
+    </g>
+  </g>
+</svg>

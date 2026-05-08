@@ -228,6 +228,7 @@ export function extractSources(chunks) {
 
 // Keywords that signal the response actually references a given article
 export const ARTICLE_KEYWORDS = {
+  'farid-profile': ['farid sayago', 'intcomex', 'kimberly-clark', 'universidad santo tomás', 'data analyst', 'bi analyst'],
   'mlops-field-notes': ['mlops', 'machine learning workflow', 'reproducible', 'observable', 'repeatable', 'field notes'],
   'wiener-git': ['wiener-git', 'git internals', 'content-addressable', 'cli'],
   'whttp': ['whttp', 'http server', 'sockets', 'c server'],
@@ -247,6 +248,7 @@ export function filterSourcesByResponse(sources, responseText) {
 
 // Static article routes — used to generate badges from keywords regardless of RAG
 export const ARTICLE_ROUTES = {
+  'farid-profile': { page_path_es: '/', page_path_en: '/' },
   'mlops-field-notes': { page_path_es: '/blog/mlops-field-notes', page_path_en: '/blog/mlops-field-notes' },
   'wiener-git': { page_path_es: '/#work', page_path_en: '/#work' },
   'whttp': { page_path_es: '/#work', page_path_en: '/#work' },
@@ -405,7 +407,7 @@ export function classifyIntent(text) {
     tags.push('jailbreak-attempt')
   }
 
-  if (/experiencia|experience|trabajo|work|career|carrera|intcomex|universidad|santo tomas/.test(lower)) tags.push('topic:experience')
+  if (/experiencia|experience|trabajo|work|career|carrera|intcomex|kimberly|clark|universidad|santo tomas/.test(lower)) tags.push('topic:experience')
   if (/proyecto|project|portfolio|github|código|code/.test(lower)) tags.push('topic:projects')
   if (/contact|contacto|email|linkedin|hablar|talk|hire|contratar/.test(lower)) tags.push('topic:contact')
   if (/stack|tech|tecnolog|python|sql|aws|docker|kubernetes|power bi|pytorch|ai|ia|mlops|agent/.test(lower)) tags.push('topic:technical')

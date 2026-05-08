@@ -1,28 +1,35 @@
 # Farid Sayago — MLOps Engineer Portfolio
 
-Farid Sayago is an MLOps and data engineer from Colombia. He builds reliable data pipelines, cloud infrastructure, and AI systems that stay useful after the demo ends.
+Farid Sayago Villamizar is an MLOps and data engineer from Colombia. He builds reliable data pipelines, cloud infrastructure, and AI systems that stay useful after the demo ends.
+
+Brand line: Building human-made workflows for an AI-powered world.
 
 ## Professional Experience
 
-- Data Analyst at Intcomex (July 2025 – February 2026): ETL pipelines, OLAP dashboards, Power BI reporting, Human Capital analytics, and operational reporting across 14+ countries.
-- Lead Investigator at Universidad Santo Tomás (June 2022 – January 2026): econometric models, R, Python, academic publications, Business Intelligence visualizations.
-- Associate Investigator at Universidad Santo Tomás (June 2024 – January 2025): Big Data processing with Dask, ethical AI standards, automated data pipelines for foreign trade datasets.
+- Data Analyst at Intcomex (July 2025 – February 2026): connected data analysis with Human Capital business needs, payroll and compliance reporting, ETL preparation, OLAP cube queries, Power BI dashboards, and operational reporting across 14+ countries.
+- Lead Investigator at Universidad Santo Tomás (June 2022 – January 2026): designed and implemented econometric models for academic publications using R and Python, delivered Business Intelligence visualizations, and developed statistical sampling instruments.
+- Associate Investigator at Universidad Santo Tomás (June 2024 – January 2025): built big-data processing scripts for foreign trade research using Dask and Python, applied ethical AI standards, and automated data pipelines for large-scale external trade datasets.
+- BI Analyst at Kimberly-Clark (May 2026 – May 2027): analyzed Latin American market opportunities, supported decision-making with dashboards, built AI-powered market research and consumer-insight workflows, and automated data pipelines with Python, SQL, and cloud tooling.
 
 ## Projects
 
 - wiener-git: Python implementation of Git internals for content-addressable storage, object serialization, and CLI design.
-- WHTTP: HTTP/1.1 server written in C for raw socket I/O, parsing boundaries, response formatting, and security-aware request handling.
-- Wiener Tickets: reproducible MLOps pipeline for ticket classification with data ingestion, feature engineering, supervised training, experiment tracking, and retraining strategy.
+- WHTTP: HTTP/1.1 server written in C for raw sockets and socket I/O, parsing boundaries, response formatting, and security-aware request handling.
+- Wiener Tickets: reproducible MLOps pipeline for ticket classification with data ingestion, feature engineering, supervised training, experiment tracking, Docker-ready deployment path, and retraining strategy.
 
 ## Skills
 
-Python, SQL, Power BI, AWS, PyTorch, Machine Learning, ETL pipelines, OLAP dashboards, Docker, Kubernetes, Terraform, Linux, Dask, R, Business Intelligence, AI agent orchestration, Git.
+Python, SQL, Power BI, AWS, PyTorch, Machine Learning, ETL pipelines, OLAP dashboards, Docker, Kubernetes, Terraform, Linux, Dask, R, Django, FastAPI, Flask, PostgreSQL, Anthropic, Model Context Protocol, Business Intelligence, Git, CI/CD, and AI-native workflows.
 
 ## Certifications and Learning
 
 LinkedIn-listed certifications include AI Software Engineer, Data Engineer, IBM Python, Análisis y Visualización de Datos, and Inglés Avanzado C1.
 
-Platzi public profile courses include AWS fundamentals, English C1, backend introduction, terminal and command line, AI tools for data teams, math for data science and AI, differential calculus for data science and AI, math fundamentals, and basic computing.
+Platzi public profile courses include AWS fundamentals, English C1, backend introduction, terminal and command line, AI tools for data teams, math functions for data science and AI, differential calculus for data science and AI, math fundamentals, and basic computing.
+
+## Field Note
+
+MLOps Field Notes: Start Small, Stay Reliable is Farid's seed article about building reliable machine-learning workflows without over-engineering from day one. Its core lesson is to start with boring, observable, repeatable workflows before adding orchestration layers.
 
 ## Contact
 
@@ -30,3 +37,4 @@ Portfolio: https://sayagos.tech
 LinkedIn: https://www.linkedin.com/in/faridsayago/
 GitHub: https://github.com/faridsz0605
 X: https://x.com/farids0805
+Instagram: https://www.instagram.com/farid_sayago7/
